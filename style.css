@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #4a69bd; /* Creative background color */
+}
+
+.counter-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#counter {
+    font-size: 3em;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#increase {
+    background-color: #2ecc71; /* Green color for increase button */
+    color: #fff;
+}
+
+#increase:hover {
+    background-color: #27ae60;
+}
+
+#reset {
+    background-color: #f39c12; /* Orange color for reset button */
+    color: #333;
+}
+
+#reset:hover {
+    background-color: #d35400;
+}
+
+#decrease {
+    background-color: #e74c3c; /* Red color for decrease button */
+    color: #fff;
+}
+
+#decrease:hover {
+    background-color: #c0392b;
+}
+
+/* Bounce animation */
+@keyframes bounceAnimation {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate {
+    animation: bounceAnimation 0.5s ease-in-out;
+}
